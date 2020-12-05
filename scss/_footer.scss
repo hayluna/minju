@@ -1,0 +1,25 @@
+footer {
+  background-color: $dark-color;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+address {
+  margin-left: 20px;
+  font-size: 20px;
+  font-style: normal;
+  color: white;
+}
+
+.sns {
+  span:not(:last-of-type) {
+    margin-right: 15px;
+  }
+}

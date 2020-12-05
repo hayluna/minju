@@ -1,4 +1,6 @@
 @import 'config';
+@import 'header';
+@import 'footer';
 
 * {
   box-sizing: border-box;
@@ -9,5 +11,21 @@
 body {
   background-color: $light-color;
   font-family: $font-stack;
+  font-weight: normal;
   line-height: 1.6;
+  letter-spacing: -1.3px;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.layout-content {
+  width: 1200px;
+  margin: 0 auto;
 }
