@@ -25,6 +25,9 @@ button {
   }
 }
 
+li {
+  list-style: none;
+}
 .layout-content {
   width: 1200px;
   margin: 0 auto;
@@ -73,5 +76,8 @@ section {
     & + .row {
       margin-top: 62px;
     }
+  }
+  .block {
+    font-size: 20px;
   }
 }

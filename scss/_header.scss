@@ -3,6 +3,7 @@ header > div {
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
+  position: relative;
   .title {
     img {
       width: 434px;
@@ -11,15 +12,39 @@ header > div {
   button {
     display: flex;
     justify-content: flex-end;
+    width: 40px;
     img {
-      width: 40px;
+      width: 100%;
     }
   }
-}
-.gnb {
-  height: 40px;
-  svg {
-    width: 100%;
-    height: 100%;
+  .side-nav {
+    display: flex;
+    flex-direction: column;
+
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 130px;
+    right: 0;
+    background-color: #eaf8fa;
+    opacity: 0.9;
+    overflow: hidden;
+    padding: 0;
+    transition: 0.5s;
+    &.open {
+      width: 600px;
+      padding: 20px 30px;
+    }
+    a {
+      padding: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+      text-align: end;
+      font-size: 22px;
+      color: $menu-text-color;
+      &:hover {
+        color: darken($menu-text-color, 5%);
+      }
+    }
   }
 }
