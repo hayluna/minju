@@ -1,6 +1,6 @@
-@import 'config';
-@import 'header';
-@import 'footer';
+@import "config";
+@import "header";
+@import "footer";
 
 * {
   box-sizing: border-box;
@@ -9,6 +9,7 @@
 }
 
 body {
+  width: 100%;
   background-color: $light-color;
   font-family: $font-stack;
   font-weight: normal;
@@ -28,11 +29,16 @@ button {
 li {
   list-style: none;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .layout-content {
   width: 1200px;
   margin: 0 auto;
 }
-
 main {
   height: 500px;
   background-color: $primary-color;
@@ -56,7 +62,7 @@ main {
       strong {
         font-size: 36px;
       }
-      p {
+      a {
         margin: 0;
         font-size: 40px;
         line-height: 1;
@@ -79,5 +85,14 @@ section {
   }
   .block {
     font-size: 20px;
+    img {
+      width: 100%;
+    }
+    a {
+      display: block;
+      color: $dark-color;
+    }
   }
 }
+
+@import "mobile";

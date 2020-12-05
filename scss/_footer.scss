@@ -1,25 +1,33 @@
 footer {
   background-color: $dark-color;
+  height: 70px;
   > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 100%;
   }
 }
 .info {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex: 1;
+  margin-left: 20px;
 }
 address {
-  margin-left: 20px;
   font-size: 18px;
   font-style: normal;
   color: white;
 }
 
 .sns {
-  span:not(:last-of-type) {
-    margin-right: 15px;
+  span {
+    img {
+      width: 36px;
+    }
+    & + span {
+      margin-left: 15px;
+    }
   }
 }

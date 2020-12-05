@@ -17,33 +17,46 @@ header > div {
       width: 100%;
     }
   }
-  .side-nav {
+
+  #menu {
     display: flex;
     flex-direction: column;
-
     width: 0;
+    height: 420px;
     position: absolute;
-    z-index: 1;
     top: 130px;
     right: 0;
+    color: transparent;
+    z-index: 10;
+    transition: All 0.5s ease;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
     background-color: #eaf8fa;
     opacity: 0.9;
     overflow: hidden;
-    padding: 0;
-    transition: 0.5s;
-    &.open {
-      width: 600px;
-      padding: 20px 30px;
-    }
     a {
       padding: 10px;
-      text-decoration: none;
-      transition: 0.3s;
+      transition: 0s;
       text-align: end;
       font-size: 22px;
-      color: $menu-text-color;
-      &:hover {
-        color: darken($menu-text-color, 5%);
+      color: transparent;
+    }
+    img {
+      transition: 0s;
+      display: none;
+    }
+
+    &.open {
+      width: 600px;
+      a {
+        color: $menu-text-color;
+        &:hover {
+          color: darken($menu-text-color, 10%);
+        }
+      }
+      img {
+        display: inline;
       }
     }
   }
