@@ -29,3 +29,38 @@ button {
   width: 1200px;
   margin: 0 auto;
 }
+
+main {
+  height: 500px;
+  background-color: $primary-color;
+  > div {
+    display: flex;
+    height: 100%;
+    div {
+      flex: 1;
+    }
+    .book-cover {
+      display: flex;
+      align-items: center;
+    }
+    .book-info {
+      padding-top: 100px;
+      text-align: end;
+    }
+    .book-title {
+      margin-bottom: 50px;
+      color: white;
+      strong {
+        font-size: 36px;
+      }
+      p {
+        margin: 0;
+        font-size: 40px;
+        line-height: 1;
+      }
+    }
+    .book-desc p {
+      font-size: 24px;
+    }
+  }
+}
