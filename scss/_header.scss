@@ -8,6 +8,13 @@ header > div {
       width: 434px;
     }
   }
+  button {
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 40px;
+    }
+  }
 }
 .gnb {
   height: 40px;

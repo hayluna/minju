@@ -15,6 +15,19 @@ header > div .title img {
   width: 434px;
 }
 
+header > div button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header > div button img {
+  width: 40px;
+}
+
 .gnb {
   height: 40px;
 }
@@ -140,4 +153,21 @@ main > div .book-title p {
 
 main > div .book-desc p {
   font-size: 24px;
+}
+
+section {
+  padding: 90px 0;
+}
+
+section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .row + .row {
+  margin-top: 62px;
 }
