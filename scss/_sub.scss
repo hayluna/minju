@@ -1,0 +1,59 @@
+#목차 {
+  &.main-content {
+    height: 75%;
+    background-color: #dde6f3;
+  }
+
+  .layout-content {
+    height: 100%;
+  }
+  main {
+    display: flex;
+    height: 100%;
+    .pdf {
+      flex: 3.5;
+      border-right: 15px solid white;
+    }
+    .list {
+      flex: 6.5;
+      padding: 0 24px;
+      .swiper-container {
+        width: 700px;
+        .swiper-button-next {
+          color: white;
+        }
+        .chapter {
+          margin-bottom: 14px;
+          font-size: 32px;
+          font-weight: 700;
+          color: $menu-text-color;
+        }
+        .content {
+          margin-bottom: 10px;
+        }
+        .title {
+          font-size: 22px;
+        }
+        .badge {
+          margin-right: 10px;
+          padding: 0 5px 2px 4px;
+          font-size: 14px;
+          line-height: 1;
+          background-color: $menu-text-color;
+          color: white;
+        }
+      }
+    }
+    .main-title {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 60px;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+}

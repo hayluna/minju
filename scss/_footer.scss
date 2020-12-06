@@ -1,6 +1,9 @@
 footer {
-  background-color: $dark-color;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 70px;
+  background-color: $dark-color;
   > div {
     display: flex;
     justify-content: space-between;
