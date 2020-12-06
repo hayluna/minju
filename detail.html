@@ -16,9 +16,7 @@
     <div class="wrapper">
       <header></header>
       <div class="main-content" id="상세">
-        <div class="layout-content">
-          <div id="article"></div>
-        </div>
+        <div id="article"></div>
       </div>
       <footer></footer>
     </div>
@@ -32,9 +30,9 @@
     <script>
       var { chapter, article } = getQueryParams(window.location);
       $(function () {
-        $("header").load("header.html");
-        $("footer").load("footer.html");
-        $("#article").load(`contents/chapter${chapter}/article${article}.html`);
+        $('header').load('header.html');
+        $('footer').load('footer.html');
+        $('#article').load(`contents/chapter${chapter}/article${article}.html`);
       });
     </script>
   </body>

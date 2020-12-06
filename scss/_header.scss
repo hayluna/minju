@@ -19,8 +19,6 @@ header > div {
   }
 
   #menu {
-    display: flex;
-    flex-direction: column;
     width: 0;
     height: 420px;
     position: absolute;
@@ -35,6 +33,11 @@ header > div {
     background-color: #eaf8fa;
     opacity: 0.9;
     overflow: hidden;
+    > div {
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+    }
     a {
       padding: 10px;
       transition: 0s;
