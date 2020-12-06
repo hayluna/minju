@@ -15,6 +15,18 @@
   address {
     font-size: 16px;
   }
+  #목차 {
+    main {
+      padding: 0;
+      flex-direction: column;
+      .pdf {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 900px) {
