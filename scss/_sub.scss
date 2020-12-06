@@ -42,6 +42,12 @@
           background-color: $menu-text-color;
           color: white;
         }
+        .swiper-pagination-bullets {
+          text-align: right;
+          .swiper-pagination-bullet-active {
+            background: $menu-text-color;
+          }
+        }
       }
     }
     .main-title {

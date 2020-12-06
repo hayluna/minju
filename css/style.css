@@ -280,6 +280,14 @@ address {
   color: white;
 }
 
+#목차 main .list .swiper-container .swiper-pagination-bullets {
+  text-align: right;
+}
+
+#목차 main .list .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background: #005ba0;
+}
+
 #목차 main .main-title {
   display: -webkit-box;
   display: -ms-flexbox;
