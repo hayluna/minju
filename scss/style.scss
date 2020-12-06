@@ -40,6 +40,10 @@ li {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
+  &:visited {
+    color: inherit;
+  }
 }
 
 .wrapper {

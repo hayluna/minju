@@ -358,6 +358,11 @@ li {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
 }
 
 .wrapper {
