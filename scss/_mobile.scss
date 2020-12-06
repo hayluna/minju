@@ -5,11 +5,13 @@
     padding-left: 5%;
     padding-right: 5%;
   }
-  main {
-    height: auto;
-    padding: 40px 0;
-    div {
-      flex-direction: column;
+  #메인 {
+    main {
+      height: auto;
+      padding: 40px 0;
+      div {
+        flex-direction: column;
+      }
     }
   }
   address {
@@ -17,13 +19,26 @@
   }
   #목차 {
     main {
+      width: 100%;
       padding: 0;
       flex-direction: column;
       .pdf {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 0 5%;
         border: none;
+        border-bottom: 10px solid white;
+        .main-image {
+          padding-bottom: 40px;
+          text-align: center;
+        }
+      }
+      .list {
+        padding: 0 5%;
+        .swiper-container {
+          height: 570px;
+        }
+      }
+      .main-title {
+        margin-bottom: 30px;
       }
     }
   }

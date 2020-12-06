@@ -93,6 +93,7 @@ footer {
   width: 100%;
   height: 70px;
   background-color: #2c2b2c;
+  z-index: 10;
 }
 
 footer > div {
@@ -237,15 +238,13 @@ address {
   background-color: #dde6f3;
 }
 
-#목차 .layout-content {
-  height: 100%;
-}
-
 #목차 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1200px;
   height: 100%;
+  margin: 0 auto;
 }
 
 #목차 main .pdf {
@@ -384,11 +383,11 @@ a {
     padding-left: 5%;
     padding-right: 5%;
   }
-  main {
+  #메인 main {
     height: auto;
     padding: 40px 0;
   }
-  main div {
+  #메인 main div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -398,6 +397,7 @@ a {
     font-size: 16px;
   }
   #목차 main {
+    width: 100%;
     padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -405,16 +405,22 @@ a {
             flex-direction: column;
   }
   #목차 main .pdf {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 0 5%;
     border: none;
+    border-bottom: 10px solid white;
+  }
+  #목차 main .pdf .main-image {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  #목차 main .list {
+    padding: 0 5%;
+  }
+  #목차 main .list .swiper-container {
+    height: 570px;
+  }
+  #목차 main .main-title {
+    margin-bottom: 30px;
   }
 }
 
