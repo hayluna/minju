@@ -1,66 +1,69 @@
 header > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 40px 0;
   position: relative;
-  .title {
-    img {
-      width: 434px;
-    }
-  }
-  button {
+  .header {
     display: flex;
-    justify-content: flex-end;
-    width: 40px;
-    img {
-      width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .title {
+      img {
+        width: 434px;
+      }
+    }
+    button {
+      display: flex;
+      justify-content: flex-end;
+      width: 40px;
+      img {
+        width: 100%;
+      }
     }
   }
+}
 
-  #menu {
-    width: 0;
-    height: 420px;
-    position: absolute;
-    top: 130px;
-    right: 0;
+#menu {
+  width: 0;
+  height: 420px;
+  position: absolute;
+  top: 130px;
+  right: 0;
+  color: transparent;
+  z-index: 10;
+  transition: All 0.5s ease;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  background-color: #eaf8fa;
+  opacity: 0.9;
+  overflow: hidden;
+  > div {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+  a {
+    padding: 10px;
+    transition: 0s;
+    text-align: end;
+    font-size: 22px;
     color: transparent;
-    z-index: 10;
-    transition: All 0.5s ease;
-    -webkit-transition: All 0.5s ease;
-    -moz-transition: All 0.5s ease;
-    -o-transition: All 0.5s ease;
-    background-color: #eaf8fa;
-    opacity: 0.9;
-    overflow: hidden;
-    > div {
-      display: flex;
-      flex-direction: column;
-      width: 600px;
-    }
+  }
+  img {
+    transition: 0s;
+    display: none;
+  }
+
+  &.open {
+    width: 600px;
     a {
-      padding: 10px;
-      transition: 0s;
-      text-align: end;
-      font-size: 22px;
-      color: transparent;
+      color: $menu-text-color;
+      &:hover {
+        color: darken($menu-text-color, 10%);
+      }
     }
     img {
-      transition: 0s;
-      display: none;
-    }
-
-    &.open {
-      width: 600px;
-      a {
-        color: $menu-text-color;
-        &:hover {
-          color: darken($menu-text-color, 10%);
-        }
-      }
-      img {
-        display: inline;
-      }
+      display: inline;
     }
   }
 }
