@@ -5,7 +5,7 @@ var getQueryParams = function (location) {
   });
   var chapter = qs[0];
   var article = qs[1];
-  return { chapter, article };
+  return { chapter:chapter, article:article };
 };
 
 var toggleSlideMenu = function () {
