@@ -1,5 +1,5 @@
 $light-color: #ffffff;
-$font-stack: "Noto Sans KR", sans-serif;
+$font-stack: "KoPub Dotum", sans-serif;
 $primary-color: #2db5cc;
 $dark-color: #2c2b2c;
 $menu-text-color: #005ba0;
@@ -19,6 +19,9 @@ $light-blue: #0098b6;
 
 .caption01 {
   font-size: 19px;
+  p {
+    font-size: 19px !important;
+  }
 }
 
 .caption02 {
