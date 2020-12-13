@@ -45,7 +45,16 @@ header > div .header {
   width: 100%;
 }
 
-header > div .header .title img {
+header > div .header .title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header > div .header .title a img {
   width: 434px;
 }
 
@@ -162,6 +171,12 @@ address {
   font-size: 18px;
   font-style: normal;
   color: white;
+}
+
+.sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .sns a img {
@@ -404,6 +419,7 @@ address {
   font-size: 40px;
   position: relative;
   text-align: center;
+  word-break: keep-all;
 }
 
 #상세 .title:after {
@@ -452,12 +468,24 @@ address {
   color: white;
 }
 
+#상세 .image.image-full-width {
+  text-align: center;
+}
+
 #상세 .image.image-full-width img {
-  width: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+#상세 .image.image-lg {
+  text-align: center;
 }
 
 #상세 .image.image-lg img {
-  width: 80%;
+  width: auto;
+  height: auto;
+  max-width: 80%;
 }
 
 #상세 .image.image-md {
@@ -465,17 +493,26 @@ address {
 }
 
 #상세 .image.image-md img {
-  width: 50%;
+  width: auto;
+  height: auto;
+  max-width: 50%;
+}
+
+#상세 .image.image-sm {
+  text-align: center;
 }
 
 #상세 .image.image-sm img {
-  width: 30%;
+  width: auto;
+  height: auto;
+  max-width: 30%;
 }
 
-#상세 p {
+#상세 .layout-content > p {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 32px;
+  text-align: justify;
 }
 
 #상세 .돋보기 {
@@ -602,6 +639,14 @@ button:focus {
   outline: none;
 }
 
+img {
+  image-rendering: -moz-auto;
+  image-rendering: -o-auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
 li {
   list-style: none;
 }
@@ -678,6 +723,15 @@ a:visited {
   #목차 main .main-title {
     margin-bottom: 30px;
   }
+  #상세 .image.image-lg img {
+    max-width: 100%;
+  }
+  #상세 .image.image-md img {
+    max-width: 70%;
+  }
+  #상세 .image.image-small img {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -717,5 +771,69 @@ a:visited {
   .sns span img {
     margin-top: 10px;
     width: 28px;
+  }
+  #상세 .image.image-md img {
+    max-width: 80%;
+  }
+  #상세 .image.image-small img {
+    max-width: 60%;
+  }
+  footer {
+    height: 180px;
+    padding: 20px 0;
+  }
+  footer > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .sns a img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  header > div .header .title a img {
+    width: 350px;
+  }
+  #상세 .title,
+  #상세 .돋보기타이틀 {
+    font-size: 35px;
+  }
+  #상세 .box-number {
+    width: 46px;
+    height: 46px;
+  }
+  #상세 .image.image-md img {
+    max-width: 100%;
+  }
+  #상세 .image.image-small img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  header > div .header .title a img {
+    width: 300px;
+  }
+  header > div .header button {
+    width: 32px;
+  }
+  #상세 .title,
+  #상세 .돋보기타이틀 {
+    font-size: 32px;
+  }
+  #상세 .box-number {
+    width: 38px;
+    height: 38px;
   }
 }

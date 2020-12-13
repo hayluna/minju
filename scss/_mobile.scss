@@ -1,5 +1,4 @@
 @media (max-width: 1200px) {
-  // 700px이하 사이즈
   .layout-content {
     width: 100%;
     padding-left: 5%;
@@ -42,6 +41,20 @@
       }
     }
   }
+
+  #상세 {
+    .image {
+      &.image-lg img {
+        max-width: 100%;
+      }
+      &.image-md img {
+        max-width: 70%;
+      }
+      &.image-small img {
+        max-width: 50%;
+      }
+    }
+  }
 }
 
 @media (max-width: 900px) {
@@ -57,7 +70,6 @@
 }
 
 @media (max-width: 768px) {
-  // 700px이하 사이즈
   section {
     padding: 40px 0;
   }
@@ -74,5 +86,75 @@
   .sns span img {
     margin-top: 10px;
     width: 28px;
+  }
+  #상세 {
+    .image {
+      &.image-md img {
+        max-width: 80%;
+      }
+      &.image-small img {
+        max-width: 60%;
+      }
+    }
+  }
+  footer {
+    height: 180px;
+    padding: 20px 0;
+  }
+  footer > div {
+    flex-direction: column;
+  }
+  .info {
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .sns a img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  header > div .header .title a img {
+    width: 350px;
+  }
+  #상세 {
+    .title,
+    .돋보기타이틀 {
+      font-size: 35px;
+    }
+    .box-number {
+      width: 46px;
+      height: 46px;
+    }
+    .image {
+      &.image-md img {
+        max-width: 100%;
+      }
+      &.image-small img {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  header > div .header .title a img {
+    width: 300px;
+  }
+  header > div .header button {
+    width: 32px;
+  }
+
+  #상세 {
+    .title,
+    .돋보기타이틀 {
+      font-size: 32px;
+    }
+    .box-number {
+      width: 38px;
+      height: 38px;
+    }
   }
 }

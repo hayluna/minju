@@ -34,7 +34,13 @@ button {
     outline: none;
   }
 }
-
+img {
+  image-rendering: -moz-auto;
+  image-rendering: -o-auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+  -ms-interpolation-mode: nearest-neighbor;
+}
 li {
   list-style: none;
 }

@@ -6,7 +6,9 @@ header > div {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    .title {
+    .title a {
+      display: flex;
+      align-items: center;
       img {
         width: 434px;
       }
