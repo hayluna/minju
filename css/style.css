@@ -188,6 +188,9 @@ address {
 }
 
 #메인 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,6 +226,10 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#메인 main > div .book-cover img {
+  max-width: 100%;
 }
 
 #메인 main > div .book-info {
@@ -772,6 +779,12 @@ a:visited {
     margin-top: 10px;
     width: 28px;
   }
+  #메인 section .row + .row {
+    margin-top: 50px;
+  }
+  #메인 section .block {
+    width: auto;
+  }
   #상세 .image.image-md img {
     max-width: 80%;
   }
@@ -805,6 +818,9 @@ a:visited {
   header > div .header .title a img {
     width: 350px;
   }
+  #메인 main > div .book-desc p {
+    font-size: 22px;
+  }
   #상세 .title,
   #상세 .돋보기타이틀 {
     font-size: 35px;
@@ -827,6 +843,15 @@ a:visited {
   }
   header > div .header button {
     width: 32px;
+  }
+  #메인 main > div .book-title strong {
+    font-size: 32px;
+  }
+  #메인 main > div .book-title p {
+    font-size: 30px;
+  }
+  #메인 main > div .book-desc p {
+    font-size: 18px;
   }
   #상세 .title,
   #상세 .돋보기타이틀 {

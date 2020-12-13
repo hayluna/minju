@@ -87,6 +87,14 @@
     margin-top: 10px;
     width: 28px;
   }
+  #메인 section {
+    .row + .row {
+      margin-top: 50px;
+    }
+    .block {
+      width: auto;
+    }
+  }
   #상세 {
     .image {
       &.image-md img {
@@ -119,6 +127,9 @@
   header > div .header .title a img {
     width: 350px;
   }
+  #메인 main > div .book-desc p {
+    font-size: 22px;
+  }
   #상세 {
     .title,
     .돋보기타이틀 {
@@ -147,6 +158,19 @@
     width: 32px;
   }
 
+  #메인 main > div {
+    .book-title {
+      strong {
+        font-size: 32px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+    .book-desc p {
+      font-size: 18px;
+    }
+  }
   #상세 {
     .title,
     .돋보기타이틀 {
