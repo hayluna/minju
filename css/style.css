@@ -160,11 +160,11 @@ address {
   color: white;
 }
 
-.sns span img {
+.sns a img {
   width: 36px;
 }
 
-.sns span + span {
+.sns a + a {
   margin-left: 15px;
 }
 

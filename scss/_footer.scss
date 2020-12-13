@@ -24,11 +24,11 @@ address {
 }
 
 .sns {
-  span {
+  a {
     img {
       width: 36px;
     }
-    & + span {
+    & + a {
       margin-left: 15px;
     }
   }
