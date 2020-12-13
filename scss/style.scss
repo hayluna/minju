@@ -1,9 +1,9 @@
-@import 'config';
-@import 'header';
-@import 'footer';
-@import 'main';
-@import 'sub';
-@import 'detail';
+@import "config";
+@import "header";
+@import "footer";
+@import "main";
+@import "sub";
+@import "detail";
 
 * {
   box-sizing: border-box;
@@ -21,6 +21,7 @@ body {
   background-color: $light-color;
   font-family: $font-stack;
   font-weight: normal;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: -1.3px;
   position: relative;
@@ -57,4 +58,4 @@ a {
   margin: 0 auto;
 }
 
-@import 'mobile';
+@import "mobile";

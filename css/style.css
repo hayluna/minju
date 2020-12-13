@@ -12,11 +12,11 @@
 }
 
 .caption01 {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .caption02 {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .text-center {
@@ -373,7 +373,7 @@ address {
 }
 
 #상세 .title:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -387,6 +387,18 @@ address {
 #상세 .title-desc {
   margin: 70px 0;
   text-align: center;
+}
+
+#상세 .title-desc p {
+  margin: 0;
+}
+
+#상세 .title-desc p + p {
+  margin-top: 8px;
+}
+
+#상세 .title-desc .caption02 {
+  margin-top: 18px;
 }
 
 #상세 .box-number {
@@ -456,8 +468,16 @@ address {
   text-align: center;
 }
 
+#상세 .돋보기설명 .caption01 {
+  margin-top: 8px;
+}
+
+#상세 .돋보기설명 .caption02 {
+  margin-top: 18px;
+}
+
 #상세 .돋보기설명:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 0;
@@ -518,6 +538,7 @@ body {
   background-color: #ffffff;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: normal;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: -1.3px;
   position: relative;

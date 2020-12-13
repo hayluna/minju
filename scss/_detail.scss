@@ -11,7 +11,7 @@
     position: relative;
     text-align: center;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 50%;
       bottom: 0;
@@ -24,6 +24,15 @@
   .title-desc {
     margin: 70px 0;
     text-align: center;
+    p {
+      margin: 0;
+    }
+    p + p {
+      margin-top: 8px;
+    }
+    .caption02 {
+      margin-top: 18px;
+    }
   }
   .box-number {
     display: inline-flex;
@@ -82,8 +91,14 @@
       margin: 0;
       text-align: center;
     }
+    .caption01 {
+      margin-top: 8px;
+    }
+    .caption02 {
+      margin-top: 18px;
+    }
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 50%;
       top: 0;
