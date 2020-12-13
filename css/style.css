@@ -448,6 +448,7 @@ address {
 
 #상세 .title-desc p {
   margin: 0;
+  word-break: keep-all;
 }
 
 #상세 .title-desc p + p {
@@ -456,6 +457,7 @@ address {
 
 #상세 .title-desc .caption02 {
   margin-top: 18px;
+  word-break: keep-all;
 }
 
 #상세 .box-number {
