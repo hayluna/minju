@@ -447,7 +447,7 @@ address {
           align-items: center;
   width: 50px;
   height: 50px;
-  padding-bottom: 5px;
+  padding-top: 2px;
   background: #005ba0;
   color: white;
 }
@@ -531,28 +531,41 @@ address {
 }
 
 #상세 .article-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 60px;
   width: 100%;
   height: 60px;
+  position: relative;
 }
 
 #상세 .article-footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 20px;
+  height: 30px;
   color: #d3d3d4;
+  font-size: 16px;
+}
+
+#상세 .article-footer a:hover {
+  color: #b9b9bb;
+}
+
+#상세 .article-footer a.이전글 {
+  left: 0px;
+}
+
+#상세 .article-footer a.다음글 {
+  right: 0px;
 }
 
 #상세 .article-footer img {
   width: 20px;
+  margin-bottom: 1px;
 }
 
 * {
