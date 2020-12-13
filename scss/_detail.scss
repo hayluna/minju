@@ -3,7 +3,9 @@
     width: 100%;
     background-color: $menu-text-color;
     color: white;
-    text-align: end;
+    > div {
+      text-align: right;
+    }
   }
   .title {
     padding: 72px 0;

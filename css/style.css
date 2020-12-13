@@ -481,7 +481,10 @@ address {
   width: 100%;
   background-color: #005ba0;
   color: white;
-  text-align: end;
+}
+
+#상세 .chapter-title > div {
+  text-align: right;
 }
 
 #상세 .title {
