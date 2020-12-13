@@ -76,7 +76,7 @@ header > div .header button img {
   width: 0;
   height: 420px;
   position: absolute;
-  top: 130px;
+  top: 120px;
   right: 0;
   color: transparent;
   z-index: 10;
@@ -750,9 +750,6 @@ a:visited {
   address {
     font-size: 14px;
   }
-  header > div #menu.open {
-    width: 100%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -820,6 +817,9 @@ a:visited {
   header > div .header .title a img {
     width: 350px;
   }
+  #menu.open {
+    max-width: 600px;
+  }
   #메인 main > div .book-desc p {
     font-size: 22px;
   }
@@ -845,6 +845,13 @@ a:visited {
   }
   header > div .header button {
     width: 32px;
+  }
+  #menu {
+    height: 350px;
+    top: 112px;
+  }
+  #menu a {
+    font-size: 18px;
   }
   #메인 main > div .book-title strong {
     font-size: 32px;
