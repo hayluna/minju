@@ -411,23 +411,22 @@
     <script src="./script.js"></script>
     <!-- Initialize Swiper -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><script>
-      // var swiper = new Swiper(".swiper-container", {
-      //   cssMode: true,
-      //   loop: true,
-      //   navigation: {
-      //     nextEl: ".swiper-button-next",
-      //   },
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //   },
-      //   mousewheel: true,
-      //   keyboard: true,
-      // });
       $(document).ready(function() {
         $('.swiper-wrapper').slick({
           dots:true,
           nextArrow: $('#slick-next'),
           dotsClass: 'slick-dots',
+          responsive: [
+            {
+              breakpoint: 900,
+            },
+            {
+              breakpoint: 768,
+            },
+            {
+              breakpoint: 600,
+            }
+          ] 
         })
       })
     </script>

@@ -17,27 +17,41 @@
     font-size: 16px;
   }
   #목차 {
+    // height: 1000px;
+    .bg {
+      height: 100%;
+    }
     main {
       width: 100%;
+      height: 100%;
       padding: 0;
-      flex-direction: column;
+      display: block;
       .pdf {
         padding: 0 5%;
         border: none;
         border-bottom: 10px solid white;
         .main-image {
           padding-bottom: 40px;
-          text-align: center;
+          justify-content: center;
         }
       }
       .list {
         padding: 0 5%;
-        .swiper-container {
-          height: 570px;
+        .swiper-wrapper {
+          width: 100%;
+          height: 100%;
+          padding-right: 24px;
+          padding-bottom: 50px;
+          .chapter {
+            font-size: 24px;
+          }
+        }
+        #slick-next {
+          right: 10px;
         }
       }
       .main-title {
-        margin-bottom: 30px;
+        height: 70px;
       }
     }
   }
