@@ -803,7 +803,16 @@ a:visited {
     padding-bottom: 50px;
   }
   #목차 main .list .swiper-wrapper .chapter {
-    font-size: 24px;
+    font-size: 26px;
+  }
+  #목차 main .list .swiper-wrapper .title {
+    font-size: 19px;
+  }
+  #목차 main .list .swiper-wrapper .sub-title {
+    font-size: 14px;
+  }
+  #목차 main .list .swiper-wrapper .badge {
+    font-size: 12px;
   }
   #목차 main .list #slick-next {
     right: 10px;

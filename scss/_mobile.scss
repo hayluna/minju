@@ -43,7 +43,16 @@
           padding-right: 24px;
           padding-bottom: 50px;
           .chapter {
-            font-size: 24px;
+            font-size: 26px;
+          }
+          .title {
+            font-size: 19px;
+          }
+          .sub-title {
+            font-size: 14px;
+          }
+          .badge {
+            font-size: 12px;
           }
         }
         #slick-next {
