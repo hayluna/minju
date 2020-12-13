@@ -10,21 +10,20 @@
       href="https://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrapper">
       <header></header>
       <div class="main-content" id="목차">
-        <div>
+        <div class="bg">
           <main>
             <div class="pdf">
               <p class="main-title">
-                PDF DOWN
+                <span class="title-content">
+                  PDF DOWN
+                <span class="arrow-down">
                 <svg
                   width="1em"
                   height="1em"
@@ -38,15 +37,18 @@
                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                   />
                 </svg>
+              </span>
+                </span>
               </p>
-              <div class="main-image main-content">
-                <img src="images/표지.png" alt="" />
-              </div>
+              <div class="sub-content">
+                <div class="main-image">
+                  <img src="images/표지.png" alt="" />
+                </div>
+            </div>
             </div>
             <div class="list">
               <p class="main-title">LIST</p>
-              <div class="main-content">
-                <div class="swiper-container">
+              <div class="sub-content">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <p class="chapter">
@@ -387,18 +389,18 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- Add Arrows -->
-                  <div class="swiper-button-next"></div>
-                  <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
+                  </div><!--swiper-wrapper-->
+                  <button id="slick-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </button>
+              </div> <!-- sub-content -->
             </div>
           </main>
         </div>
       </div>
-      <footer></footer>
+      <footer class="sticky"></footer>
     </div>
     <!-- jQuery -->
     <script
@@ -408,20 +410,26 @@
     ></script>
     <script src="./script.js"></script>
     <!-- Initialize Swiper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        cssMode: true,
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><script>
+      // var swiper = new Swiper(".swiper-container", {
+      //   cssMode: true,
+      //   loop: true,
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //   },
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //   },
+      //   mousewheel: true,
+      //   keyboard: true,
+      // });
+      $(document).ready(function() {
+        $('.swiper-wrapper').slick({
+          dots:true,
+          nextArrow: $('#slick-next'),
+          dotsClass: 'slick-dots',
+        })
+      })
     </script>
     <script>
       $(function () {

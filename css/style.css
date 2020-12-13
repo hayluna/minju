@@ -289,13 +289,11 @@ address {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-bottom: 20px;
 }
 
-#목차.main-content > div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-bottom: 30px;
+#목차.main-content .bg {
+  width: 100%;
   background-color: #dde6f3;
 }
 
@@ -320,6 +318,29 @@ address {
       -ms-flex-direction: column;
           flex-direction: column;
   border-right: 15px solid white;
+  padding: 0 24px;
+}
+
+#목차 main .pdf .main-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+#목차 main .pdf .main-image img {
+  width: 300px;
+  height: auto;
 }
 
 #목차 main .list {
@@ -334,32 +355,77 @@ address {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 24px;
+  position: relative;
 }
 
-#목차 main .list .swiper-container {
-  width: 700px;
+#목차 main .list #slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
-#목차 main .list .swiper-container .swiper-button-next {
-  color: white;
+#목차 main .list .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 696px;
+  height: 100%;
+  position: relative;
 }
 
-#목차 main .list .swiper-container .chapter {
+#목차 main .list .swiper-wrapper .slick-prev {
+  display: none !important;
+}
+
+#목차 main .list .swiper-wrapper .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+#목차 main .list .swiper-wrapper .slick-dots li button {
+  font-size: 0;
+}
+
+#목차 main .list .swiper-wrapper .slick-dots li button:before {
+  content: "•";
+  font-size: 22px;
+  color: #005ba0;
+  opacity: 0.25;
+  padding: 0 5px;
+}
+
+#목차 main .list .swiper-wrapper .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+#목차 main .list .swiper-wrapper .slick-list {
+  width: 100%;
+}
+
+#목차 main .list .swiper-wrapper .chapter {
   margin-bottom: 14px;
   font-size: 32px;
   font-weight: 700;
   color: #005ba0;
 }
 
-#목차 main .list .swiper-container .content {
+#목차 main .list .swiper-wrapper .content {
   margin-bottom: 10px;
 }
 
-#목차 main .list .swiper-container .title {
-  font-size: 22px;
+#목차 main .list .swiper-wrapper .title {
+  font-size: 18px;
 }
 
-#목차 main .list .swiper-container .badge {
+#목차 main .list .swiper-wrapper .sub-title {
+  font-size: 16px;
+}
+
+#목차 main .list .swiper-wrapper .badge {
   margin-right: 10px;
   padding: 0 5px 2px 4px;
   font-size: 14px;
@@ -368,41 +434,44 @@ address {
   color: white;
 }
 
-#목차 main .list .swiper-container .swiper-pagination-bullets {
-  text-align: right;
-}
-
-#목차 main .list .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
-  background: #005ba0;
-}
-
 #목차 main .main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 90px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+#목차 main .main-title .title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#목차 main .main-title .title-content .arrow-down {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 48px;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-}
-
-#목차 main .main-title svg {
   margin-left: 10px;
+  padding-bottom: 5px;
 }
 
-#목차 main .main-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+#목차 main .sub-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 #상세 {
@@ -668,6 +737,7 @@ a:visited {
 .wrapper {
   width: 100%;
   height: 100%;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
