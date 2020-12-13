@@ -59,7 +59,7 @@
 
 @media (max-width: 900px) {
   footer {
-    height: 100px;
+    min-height: 100px;
   }
   address {
     font-size: 14px;
@@ -103,7 +103,7 @@
     }
   }
   footer {
-    height: 180px;
+    min-height: 180px;
     padding: 20px 0;
   }
   footer > div {
@@ -151,11 +151,14 @@
 }
 
 @media (max-width: 450px) {
-  header > div .header .title a img {
-    width: 300px;
-  }
-  header > div .header button {
-    width: 32px;
+  header > div .header {
+    .title a img {
+      width: 100%;
+    }
+    button {
+      min-width: 32px;
+      margin-left: 10px;
+    }
   }
   #menu {
     height: 350px;
@@ -167,14 +170,14 @@
   #메인 main > div {
     .book-title {
       strong {
-        font-size: 32px;
+        font-size: 26px;
       }
       p {
-        font-size: 30px;
+        font-size: 26px;
       }
     }
     .book-desc p {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
   #상세 {
