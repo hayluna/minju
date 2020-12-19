@@ -29,5 +29,9 @@ $light-blue: #0098b6;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
+  margin: 0 auto;
+  img {
+    max-width: 100%;
+  }
 }
