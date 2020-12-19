@@ -417,10 +417,11 @@
     ></script>
     <script src="./script.js"></script>
     <!-- Initialize Swiper -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
       $(document).ready(function() {
         const bookmark = window.location.hash.substr(1)-1
-        const swiper = $('.swiper-wrapper').slick({
+        window.swiper = $('.swiper-wrapper').slick({
           dots:true,
           infinite:false,
           initialSlide: bookmark,
@@ -439,6 +440,10 @@
             }
           ] 
         })
+      })
+      $(window).on('hashchange', function(){
+        const bookmark = window.location.hash.substr(1)-1
+        window.swiper.slick('slickGoTo', bookmark)
       })
     </script>
     <script>

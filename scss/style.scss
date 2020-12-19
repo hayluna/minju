@@ -52,6 +52,9 @@ a {
   &:visited {
     color: inherit;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .wrapper {

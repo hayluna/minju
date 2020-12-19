@@ -769,6 +769,10 @@ a:visited {
   color: inherit;
 }
 
+a:focus {
+  outline: none;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
