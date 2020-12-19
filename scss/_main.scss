@@ -20,7 +20,7 @@
       }
       .book-info {
         padding-top: 100px;
-        text-align: end;
+        text-align: right;
       }
       .book-title {
         margin-bottom: 50px;
@@ -30,12 +30,14 @@
         }
         p {
           margin: 0;
-          font-size: 40px;
+          font-size: 50px;
           line-height: 1;
+          letter-spacing: -2px;
         }
       }
       .book-desc p {
         font-size: 24px;
+        letter-spacing: -1px;
       }
     }
   }
@@ -55,6 +57,7 @@
       a {
         display: block;
         color: $dark-color;
+        font-weight: bold;
         img {
           width: 100%;
         }

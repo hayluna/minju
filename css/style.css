@@ -169,7 +169,7 @@ footer > div {
 }
 
 address {
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   color: white;
 }
@@ -229,7 +229,7 @@ address {
 
 #메인 main > div .book-info {
   padding-top: 100px;
-  text-align: end;
+  text-align: right;
 }
 
 #메인 main > div .book-title {
@@ -243,12 +243,14 @@ address {
 
 #메인 main > div .book-title p {
   margin: 0;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 1;
+  letter-spacing: -2px;
 }
 
 #메인 main > div .book-desc p {
   font-size: 24px;
+  letter-spacing: -1px;
 }
 
 #메인 section {
@@ -276,6 +278,7 @@ address {
 #메인 section .block a {
   display: block;
   color: #2c2b2c;
+  font-weight: bold;
 }
 
 #메인 section .block a img {
@@ -319,7 +322,7 @@ address {
       -ms-flex-direction: column;
           flex-direction: column;
   border-right: 15px solid white;
-  padding: 0 24px;
+  padding-right: 40px;
 }
 
 #목차 main .pdf .main-image {
@@ -337,7 +340,7 @@ address {
 }
 
 #목차 main .pdf .main-image img {
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 
@@ -356,10 +359,35 @@ address {
   position: relative;
 }
 
-#목차 main .list #slick-next {
+#목차 main .list .sub-content {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+#목차 main .list .slick-arrow-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
-  top: 50%;
   right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#목차 main .list .slick-arrow-buttons svg {
+  fill: white;
+}
+
+#목차 main .list .slick-arrow-buttons button:not(:only-child).slick-next {
+  margin-top: 20px;
+}
+
+#목차 main .list .slick-disabled {
+  display: none !important;
 }
 
 #목차 main .list .swiper-wrapper {
@@ -381,7 +409,7 @@ address {
   display: flex;
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 26px;
 }
 
 #목차 main .list .swiper-wrapper .slick-dots li button {
@@ -390,7 +418,7 @@ address {
 
 #목차 main .list .swiper-wrapper .slick-dots li button:before {
   content: "•";
-  font-size: 22px;
+  font-size: 30px;
   color: #005ba0;
   opacity: 0.25;
   padding: 0 5px;

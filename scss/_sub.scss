@@ -20,7 +20,7 @@
       display: flex;
       flex-direction: column;
       border-right: 15px solid white;
-      padding: 0 24px;
+      padding-right: 40px;
       .main-image {
         display: flex;
         align-items: flex-start;
@@ -29,7 +29,7 @@
         height: 100%;
 
         img {
-          width: 300px;
+          width: 100%;
           height: auto;
         }
       }
@@ -40,10 +40,27 @@
       flex-direction: column;
       padding: 0 24px;
       position: relative;
-      #slick-next {
+      .sub-content {
+        position: relative;
+        padding-bottom: 80px;
+      }
+      .slick-arrow-buttons {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 50%;
         right: 0;
+        transform: translateY(-50%);
+        svg {
+          fill: white;
+        }
+        button:not(:only-child) {
+          &.slick-next {
+            margin-top: 20px;
+          }
+        }
+      }
+      .slick-disabled {
+        display: none !important;
       }
       .swiper-wrapper {
         display: flex;
@@ -57,13 +74,13 @@
           display: flex;
           position: absolute;
           right: 0;
-          bottom: 10px;
+          bottom: 26px;
           li {
             button {
               font-size: 0;
               &:before {
                 content: "•";
-                font-size: 22px;
+                font-size: 30px;
                 color: $menu-text-color;
                 opacity: 0.25;
                 padding: 0 5px;
